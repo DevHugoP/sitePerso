@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, useScroll, useTransform, MotionConfig } from "framer-motion";
+import profilePic from "./assets/profilPic.jpeg";
 // Importation des icônes de React Icons
 import {
   FaGithub,
@@ -82,7 +83,8 @@ function App() {
             }}
             className='w-40 h-40 rounded-full overflow-hidden mb-8 shadow-xl'>
             <img
-              src='./assets/profilPic.jpeg'
+              src={profilePic}
+              alt='Hugo Polchetti'
               className='w-full h-full object-cover transform hover:scale-110 transition-transform duration-500'
             />
           </motion.div>
@@ -99,8 +101,7 @@ function App() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6 }}
             className='text-xl text-gray-300 mb-8 text-center max-w-2xl'>
-            Développeur Full Stack Passionné | Créateur d'Expériences Web
-            Innovantes
+            Développeur Front End | TypeScript | Vue.js | React.js
           </motion.p>
           <motion.div
             initial={{ opacity: 0 }}
@@ -259,7 +260,7 @@ function App() {
         {/* Footer */}
         <footer className='border-t border-gray-800 mt-20 py-8'>
           <div className='container mx-auto px-4 text-center text-gray-400'>
-            <p>© 2024 John Doe. Tous droits réservés.</p>
+            <p>2025 Hugo Polchetti</p>
           </div>
         </footer>
       </div>
